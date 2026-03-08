@@ -1,7 +1,9 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import ProjectCard from './ProjectCard.vue'
-import projects from '../data/projects.json'
+import projects from '../assets/projects/manifest.json'
+
+const headerImages = import.meta.glob('../assets/projects/*/header.png', { eager: true, import: 'default' })
 
 const screenWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1200)
 
@@ -14,9 +16,9 @@ onUnmounted(() => window.removeEventListener('resize', onResize))
 
 const layout = computed(() => {
   const w = screenWidth.value
-  if (w < 480) return { pattern: [2, 3, 2, 3, 2], size: 70, gap: 8 }
-  if (w < 768) return { pattern: [2, 3, 2, 3, 2], size: 90, gap: 10 }
-  return { pattern: [3, 4, 5], size: 130, gap: 14 }
+  if (w < 480) return { pattern: [2, 3, 2, 3, 2], size: 90, gap: 8 }
+  if (w < 768) return { pattern: [2, 3, 2, 3, 2], size: 110, gap: 10 }
+  return { pattern: [3, 4, 5], size: 170, gap: 16 }
 })
 
 const items = computed(() => {
@@ -37,8 +39,11 @@ const items = computed(() => {
 
     for (let c = 0; c < count; c++) {
       if (idx >= projects.length) break
+      const proj = projects[idx]
+      const key = `../assets/projects/${proj.titol}/header.png`
       result.push({
-        ...projects[idx],
+        ...proj,
+        headerUrl: headerImages[key] || '',
         x: offsetX + c * cellW + cellW / 2 - totalW / 2,
         y: r * cellH + cellH / 2 - totalH / 2,
       })
@@ -60,7 +65,7 @@ const items = computed(() => {
         class="cell-wrapper"
         :style="{ transform: `translate(${item.x}px, ${item.y}px)` }"
       >
-        <ProjectCard :titol="item.titol" :tipografia="item.tipografia" :rol="item.rol" :color="item.color" />
+        <ProjectCard :titol="item.titol" :tipografia="item.tipografia" :rol="item.rol" :color="item.color" :headerUrl="item.headerUrl" />
       </div>
     </div>
   </section>

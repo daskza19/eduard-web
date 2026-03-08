@@ -4,8 +4,8 @@ import shutil
 import urllib.request
 import urllib.parse
 
-API_KEY        = os.environ["GOOGLE_CREDENTIALS"]
-SPREADSHEET_ID = os.environ["SPREADSHEET_ID"]
+API_KEY        = "AIzaSyAizMM5euwtLB9omhblTn3q7RSs_P0RUiA"  # os.environ["GOOGLE_CREDENTIALS"]
+SPREADSHEET_ID = "1cEgsddgE9c729t-3AG4TizCH80BeLgwxjkHYfLH7fn0"  # os.environ["SPREADSHEET_ID"]
 SHEET_NAME     = "projectes"
 PROJECTS_PATH  = "src/assets/projects"
 MANIFEST_PATH  = os.path.join(PROJECTS_PATH, "manifest.json")

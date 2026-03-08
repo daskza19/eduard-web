@@ -1,0 +1,62 @@
+[
+  {
+    "categoria": "MODA",
+    "titol": "MICROWAVE",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "MICROWAVE is a short film that was born from a party night. Although the night didn’t end as well as I expected, I got home and with a terrible hangover I started to write a kind of screenplay. Basically, I wanted to talk about everything I felt when I met “A” last night. I have spent all my holydays drawing and fixing photos to my notebook with references and ideas for this short film. And that’s it! MICROWAVE wants to be an approach of the new way of loving which young people have. Try to fly above the heartbreak and go outside to take the step. “Because if you live with fear, you’re still not living.”",
+    "data": "2017",
+    "productora": "Eduard",
+    "rol": "ART DIRECTOR",
+    "header": "header.png",
+    "main": "main.png",
+    "video": null,
+    "assets": [
+      "07.png",
+      "06.png",
+      "05.png",
+      "04.png",
+      "03.png",
+      "02.png",
+      "01.png"
+    ]
+  },
+  {
+    "categoria": "MODA",
+    "titol": "BBBOM",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "Avui ARBO films us presenta #BBBOM, el primer fashion film dirigit pel nostre director Eduard Sànchez Arbona. Aquest vol donar la benvinguda al bon temps i invitar a la gent a sortir de casa. El cercle acompanya a tothom, catalitzador de les xarxes socials, vol englobar el nostre story diari que presentem a plataformes com Instagram. Joves inquiets i en ganes de jugar. Fent-se selfies en tot moment i amb ganes de passar-s’ho bé! Això és #BBBOM, la invitació a col·laborar en un món on solament cal fer el què volem. Esperem que us agradi.",
+    "data": "2017",
+    "productora": "Eduard",
+    "rol": "ART DIRECTOR",
+    "header": "header.png",
+    "main": "main.png",
+    "video": null,
+    "assets": [
+      "05.png",
+      "04.png",
+      "03.png",
+      "02.png",
+      "01.png"
+    ]
+  },
+  {
+    "categoria": "MODA",
+    "titol": "TRÓPICO",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "T R Ó P I C O es un cortometraje escrito y dirigido por Eduard Sànchez Arbona que se grabó el pasado 13 de abril de 2016 en Terrassa. Éste quiere explicar el momento más íntimo de los jóvenes, sus personajes están inmersos en un cosmos de aburrimiento y desesperación, pero con la ayuda de las frutas tropicales sacan la fiera sexual que tienen dentro.",
+    "data": "2016",
+    "productora": "Eduard",
+    "rol": "ART DIRECTOR",
+    "header": "header.png",
+    "main": "main.png",
+    "video": null,
+    "assets": [
+      "06.png",
+      "05.png",
+      "04.png",
+      "03.png",
+      "02.png",
+      "01.png"
+    ]
+  }
+]
