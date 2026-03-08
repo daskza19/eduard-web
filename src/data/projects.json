@@ -1,0 +1,14 @@
+[
+  { "id": 1,  "categoria": "Web",        "titol": "Nebula",  "tipografia": "'Inter', sans-serif",    "subtitol": "Landing page",        "data": "2024", "productora": "Studio A",   "rol": "Designer",    "color": "#667eea" },
+  { "id": 2,  "categoria": "Branding",   "titol": "Aurora",  "tipografia": "'Georgia', serif",       "subtitol": "Visual identity",     "data": "2024", "productora": "Studio B",   "rol": "Director",    "color": "#764ba2" },
+  { "id": 3,  "categoria": "Dev",        "titol": "Cosmos",  "tipografia": "'Courier New', monospace", "subtitol": "Full-stack app",    "data": "2025", "productora": "Studio C",   "rol": "Developer",   "color": "#f093fb" },
+  { "id": 4,  "categoria": "UI/UX",      "titol": "Vertex",  "tipografia": "'Inter', sans-serif",    "subtitol": "Mobile app",          "data": "2025", "productora": "Studio D",   "rol": "UX Lead",     "color": "#4facfe" },
+  { "id": 5,  "categoria": "Motion",     "titol": "Pulse",   "tipografia": "'Georgia', serif",       "subtitol": "Animation reel",      "data": "2025", "productora": "Studio E",   "rol": "Animator",    "color": "#43e97b" },
+  { "id": 6,  "categoria": "Photo",      "titol": "Drift",   "tipografia": "'Inter', sans-serif",    "subtitol": "Photo series",        "data": "2024", "productora": "Studio F",   "rol": "Photographer", "color": "#fa709a" },
+  { "id": 7,  "categoria": "Web",        "titol": "Orbit",   "tipografia": "'Courier New', monospace", "subtitol": "SaaS platform",    "data": "2025", "productora": "Studio G",   "rol": "Developer",   "color": "#a18cd1" },
+  { "id": 8,  "categoria": "3D",         "titol": "Flux",    "tipografia": "'Georgia', serif",       "subtitol": "3D experience",       "data": "2026", "productora": "Studio H",   "rol": "3D Artist",   "color": "#fbc2eb" },
+  { "id": 9,  "categoria": "Illustration", "titol": "Helix", "tipografia": "'Inter', sans-serif",    "subtitol": "Editorial art",       "data": "2024", "productora": "Studio I",   "rol": "Illustrator", "color": "#fda085" },
+  { "id": 10, "categoria": "Strategy",   "titol": "Prism",   "tipografia": "'Georgia', serif",       "subtitol": "Brand strategy",      "data": "2025", "productora": "Studio J",   "rol": "Strategist",  "color": "#84fab0" },
+  { "id": 11, "categoria": "Campaign",   "titol": "Echo",    "tipografia": "'Inter', sans-serif",    "subtitol": "Digital campaign",    "data": "2026", "productora": "Studio K",   "rol": "Director",    "color": "#cfd9df" },
+  { "id": 12, "categoria": "Interactive", "titol": "Nova",   "tipografia": "'Courier New', monospace", "subtitol": "Interactive site", "data": "2026", "productora": "Studio L",   "rol": "Developer",   "color": "#ffecd2" }
+]
