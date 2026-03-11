@@ -1,3 +1,19 @@
+:root {
+  /* Category colors: background / border */
+  --cat-videoclip-bg: rgb(235, 84, 84);
+  --cat-videoclip-border: rgb(153, 49, 49);
+  --cat-moda-bg: rgb(84, 187, 235);
+  --cat-moda-border: rgb(49, 153, 187);
+  --cat-festival-bg: rgb(84, 235, 117);
+  --cat-festival-border: rgb(49, 153, 49);
+  --cat-podcast-bg: rgb(235, 84, 228);
+  --cat-podcast-border: rgb(153, 49, 153);
+  --cat-anunci-bg: rgb(235, 182, 84);
+  --cat-anunci-border: rgb(153, 122, 49);
+  --cat-director-art-bg: rgb(84, 235, 177);
+  --cat-director-art-border: rgb(49, 153, 110);
+}
+
 * {
   margin: 0;
   padding: 0;

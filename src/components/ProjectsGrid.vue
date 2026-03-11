@@ -24,43 +24,107 @@ onUnmounted(() => window.removeEventListener('resize', onResize))
 
 const layout = computed(() => {
   const w = screenWidth.value
-  if (w < 480) return { pattern: [2, 3, 2, 3, 2], size: 90, gap: 8 }
-  if (w < 768) return { pattern: [2, 3, 2, 3, 2], size: 110, gap: 10 }
-  return { pattern: [3, 4, 5], size: 170, gap: 16 }
+  if (w < 480) return { pattern: [3, 4, 3, 4, 3, 4, 3, 4], size: 90, gap: 8 }
+  if (w < 768) return { pattern: [3, 4, 3, 4, 3, 4, 3, 4], size: 110, gap: 10 }
+  return { pattern: [5, 6, 7, 6, 5], size: 170, gap: 16 }
 })
+
+const hoveredIdx = ref(-1)
+
+// --- Tunables ---
+const EDGE_SHRINK = 0.35       // how much smaller edge cards are (0 = same, 1 = invisible)
+const HOVER_SCALE = 1.1       // scale of the hovered card
+const NEIGHBOR_BOOST = 0.2    // max extra scale for nearby cards on hover
+const NEIGHBOR_MAX = 1.05      // cap scale for neighbor cards
+const NEIGHBOR_RADIUS = 1    // radius in cell-units for neighbor influence
 
 const items = computed(() => {
   const { pattern, size, gap } = layout.value
-  const maxCols = Math.max(...pattern)
-  const cellW = size + gap
-  const cellH = size + gap
-  const totalW = maxCols * cellW
-  const totalH = pattern.length * cellH
+  const totalRows = pattern.length
+  const midRow = (totalRows - 1) / 2
 
-  const result = []
+  // First pass: assign to rows and compute scale per card
+  const rows = []
   let idx = 0
-
-  
-  for (let r = 0; r < pattern.length; r++) {
+  for (let r = 0; r < totalRows; r++) {
     const count = pattern[r]
-    const rowW = count * cellW
-    const offsetX = (totalW - rowW) / 2
-
+    const midCol = (count - 1) / 2
+    const row = []
     for (let c = 0; c < count; c++) {
       if (idx >= projects.length) break
-      const proj = projects[idx]
-      result.push({
-        ...proj,
-        headerUrl: findHeader(proj.titol),
-        x: offsetX + c * cellW + cellW / 2 - totalW / 2,
-        y: r * cellH + cellH / 2 - totalH / 2,
-      })
-      idx++
+      const proj = projects[idx++]
+      const ny = midRow > 0 ? (r - midRow) / midRow : 0
+      const nx = midCol > 0 ? (c - midCol) / midCol : 0
+      const dist = Math.sqrt(nx * nx + ny * ny)
+      const scale = 1 - Math.min(dist / Math.SQRT2, 1) * EDGE_SHRINK
+      row.push({ proj, scale })
     }
+    rows.push(row)
+  }
+
+  // Second pass: position with consistent gaps between rendered edges
+  const rowHeights = rows.map(row =>
+    row.length > 0 ? Math.max(...row.map(c => size * c.scale)) : 0
+  )
+  const totalH = rowHeights.reduce((s, h) => s + h, 0) + (totalRows - 1) * gap
+
+  const result = []
+  let yAccum = -totalH / 2
+
+  for (let r = 0; r < rows.length; r++) {
+    const row = rows[r]
+    const rowH = rowHeights[r]
+    const cy = yAccum + rowH / 2
+
+    const totalRowW = row.reduce((s, c) => s + size * c.scale, 0) + (row.length - 1) * gap
+    let xAccum = -totalRowW / 2
+
+    for (let c = 0; c < row.length; c++) {
+      const card = row[c]
+      const cardW = size * card.scale
+      const cx = xAccum + cardW / 2
+
+      result.push({
+        ...card.proj,
+        headerUrl: findHeader(card.proj.titol),
+        x: cx,
+        y: cy,
+        scale: card.scale,
+      })
+
+      xAccum += cardW + gap
+    }
+
+    yAccum += rowH + gap
   }
 
   return result
 })
+
+function cellStyle(item, idx) {
+  let scale = item.scale
+
+  if (hoveredIdx.value >= 0) {
+    const hovered = items.value[hoveredIdx.value]
+    const dx = item.x - hovered.x
+    const dy = item.y - hovered.y
+    const d = Math.sqrt(dx * dx + dy * dy)
+    const { size, gap } = layout.value
+    const radius = (size + gap) * NEIGHBOR_RADIUS
+
+    if (idx === hoveredIdx.value) {
+      scale = HOVER_SCALE
+    } else if (d < radius) {
+      const proximity = 1 - d / radius
+      scale = Math.min(scale + proximity * NEIGHBOR_BOOST, NEIGHBOR_MAX)
+    }
+  }
+
+  return {
+    transform: `translate(${item.x}px, ${item.y}px) scale(${scale})`,
+    zIndex: idx === hoveredIdx.value ? 10 : 1,
+  }
+}
 </script>
 
 <template>
@@ -68,12 +132,14 @@ const items = computed(() => {
     <h2 class="section-title">Projects</h2>
     <div class="honeycomb" :style="{ '--cell-size': layout.size + 'px' }">
       <div
-        v-for="item in items"
+        v-for="(item, idx) in items"
         :key="item.id"
         class="cell-wrapper"
-        :style="{ transform: `translate(${item.x}px, ${item.y}px)` }"
+        :style="cellStyle(item, idx)"
+        @mouseenter="hoveredIdx = idx"
+        @mouseleave="hoveredIdx = -1"
       >
-        <ProjectCard :titol="item.titol" :tipografia="item.tipografia" :rol="item.rol" :color="item.color" :headerUrl="item.headerUrl" />
+        <ProjectCard :titol="item.titol" :tipografia="item.tipografia" :rol="item.rol" :color="item.color" :headerUrl="item.headerUrl" :projectType="item.categoria" />
       </div>
     </div>
   </section>
