@@ -1,0 +1,924 @@
+[
+  {
+    "year": "2017",
+    "events": [
+      {
+        "data": "Curso 2017-18",
+        "rol1": "",
+        "rol2": "",
+        "text": "Coordinador de Atrezo en la <enf>ESCAC</enf>",
+        "sub_text": "",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 11/SEP al 30/NOV",
+        "rol1": "MERITORIO",
+        "rol2": "",
+        "text": "Película de Patricia Font: <enf>Gente que viene y bah</enf>",
+        "sub_text": "Producida por On Cinema. Dir. Arte Sylvia Steinbrecht.",
+        "color": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "year": "2018",
+    "events": [
+      {
+        "data": "Del 9 al 27/ABRIL",
+        "rol1": "MERITORIO",
+        "rol2": "",
+        "text": "Película de Isabel Coixet <enf>Elisa y Marcela</enf>",
+        "sub_text": "Producida por Rodar y Rodar Cine, S.L. Dir. Arte Sylvia Steinbrecht.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 28/JUN al 19/JUL",
+        "rol1": "INSTRUCTOR",
+        "rol2": "",
+        "text": "Dirección artística dentro del <enf>Summer School 2018</enf> de la <enf>ESCAC</enf>",
+        "sub_text": "",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 1/OCT al 15/NOV",
+        "rol1": "MERITORIO",
+        "rol2": "",
+        "text": "Construcción y Regiduría en la serie <enf>La Fossa</enf>",
+        "sub_text": "Producida por Bausan Films. Dir. Arte Carmine Palmentieri",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 19/NOV al 7/DES",
+        "rol1": "MERITORIO",
+        "rol2": "",
+        "text": "Construcción y Rodaje  en la película <enf>Te quiero, imbécil</enf>",
+        "sub_text": "Producida por Minoria Absoluta. Dir. Arte Roger Bellés",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 14/DES al 18/DES",
+        "rol1": "ATREZZISTA",
+        "rol2": "PROPS_BUYER",
+        "text": "Videoclip <enf>You & I</enf>  de Barns Courtney dirigido por Pablo Maestres",
+        "sub_text": "Producido por Primo International Content. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "year": "2019",
+    "events": [
+      {
+        "data": "21/ene",
+        "rol1": "",
+        "rol2": "",
+        "text": "Shooting para  <enf>C&A SS19 CHINA</enf>",
+        "sub_text": "Producido por Malditos Produce.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 23/ENE al 27/ENE",
+        "rol1": "ATREZZISTA",
+        "rol2": "",
+        "text": "Anuncio del <enf>Seat León</enf>",
+        "sub_text": "Producido por Primo Buenos Aires. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 12/FEB al 13/FEB",
+        "rol1": "ATREZZISTA",
+        "rol2": "",
+        "text": "Anuncio de <enf>Jägermeister</enf>",
+        "sub_text": "Producido por  Las Montañas del Canadá. Dir. Arte Teresa Montanuy.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del  25/FEB al 1/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Obsesionada - Novedades Carmninha</enf>",
+        "sub_text": "Producido por Nanouk Films. Dir. Laura Vifer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 6/MAR",
+        "rol1": "ATREZZISTA",
+        "rol2": "",
+        "text": "Snuncio de <enf>Mango</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte Teresa Montanuy.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 7/MAR",
+        "rol1": "AJUDANT_ART",
+        "rol2": "",
+        "text": "Entrevistas de  <enf>Nike</enf>",
+        "sub_text": "Producidas por Pau Bacardit. Dir. Arte Eli Gomà.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 11/MAR",
+        "rol1": "AJUDANT_ART",
+        "rol2": "",
+        "text": "Shooting para  <enf>Cosentyxs</enf>",
+        "sub_text": "Producido por McCann Health. Dir. Arte Judit Ferrer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 20/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Fashionfilm <enf>Cia Fantástica Revelation ZAHARA</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Lyona Ivanova.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 28/MAR al 4/ABR",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Chaise d'eparne</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte César Martínez.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 9/ABR al 10/ABR",
+        "rol1": "ATREZZISTA",
+        "rol2": "",
+        "text": "Anuncio de <enf>BJORG</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​Del 23/ABR al 19/JUL",
+        "rol1": "MERITORIO",
+        "rol2": "",
+        "text": "Película <enf>Love gets a Room</enf> de Rodrígo Cortés.",
+        "sub_text": "Producida por Nostromo Pictures. Dir. Arte Laia Colet.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 3/MAY al 4/MAY",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Adidas</enf>",
+        "sub_text": "Producido por TF7. Dir. Arte César Martínez.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del  18/MAY al 19/MAY",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Estimar-te com la terra - Ginestà</enf>",
+        "sub_text": "Producido por Kasba Music. Dir. Pol Ferraris.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 14/JUN",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip para <enf>Lix Molina</enf>",
+        "sub_text": "Dir. Àgueda Sfer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 15/JUN",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Spot de <enf>PILMA Pride BCN 2019</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Lyona Ivanova.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 22/JUL al 26/JUL",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Renault ZOE</enf>",
+        "sub_text": "Producido por Primo International Content. Dir. Arte César Martínez.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 29/JUL al 3/AGO",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Nissan</enf>",
+        "sub_text": "Producido por Bagabound. Dir. Arte César Martínez.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 7/AGO al 14/AGO",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Huawei Zone</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte César Martínez.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del20/AGO al 22/AGO",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Oscar Health</enf>",
+        "sub_text": "Producido por TF7. Dir. Arte Andrea Batlló.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 19/SEP",
+        "rol1": "ATREZZISTA",
+        "rol2": "",
+        "text": "Anuncio de <enf>VW Tiguan</enf>",
+        "sub_text": "Producido por Primo Buenos Aires. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 23/SEP al 23/DIC",
+        "rol1": "AJUDANT_ART",
+        "rol2": "",
+        "text": "Serie <enf>MIra lo que has hecho T3</enf>",
+        "sub_text": "Producida por El Terrat de Produccions. Dir. Arte Marc Mateu",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 29/SEP",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Vidas Paralelas - Crab Apples</enf>",
+        "sub_text": "Dir. Lyona Ivanova.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 8/OCT",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Isla de Lesbos</enf>",
+        "sub_text": "Dir. León Santana.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 29/NOV",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Money Queer - Pieceszx feat. Okamiluke</enf>",
+        "sub_text": "Producido por Liquorice. Dir. Javi Botella y David Medina.",
+        "color": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "year": "2020",
+    "events": [
+      {
+        "data": "Del 25/ENE al 29/ENE",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Cortometrage  <enf>La banyera</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Sergi Martí.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 28/ENE al 29/ENE",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Extraterrestre - Coque Malla</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Lyona Ivanova & Alex Maruny.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 10/FEB al 14/FEB",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Película <enf>Operation Mincemeat</enf>",
+        "sub_text": "Producida por Palma Films. Dir. Arte Laia Colet.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 20/FEB al 21/FEB",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Peugeot 108</enf>",
+        "sub_text": "Producido por The Gang House. Dir. Arte César Martínez.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 4/MAR al 9/MAR",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Starbucks</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte César Martínez.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 10/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Heartache - Odina</enf>",
+        "sub_text": "Producido por Bjm Rcord Media Barcelona. Dir. Alex Maruny.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 12/MAR y 14/MAR",
+        "rol1": "ATREZZISTA",
+        "rol2": "",
+        "text": "Anuncio de <enf>Tik-Tok</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 18/MAY",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Todo Estaba bien - Carlos Sadness & Manuel Medrano</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 26/MAY al 29/MAY",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Película <enf>6 dias corrientes</enf>",
+        "sub_text": "Producido por Distinto Films. Dir. Arte Marta Collell",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 18/JUN al 28/JUN",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Seat Cupra</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte César Martínez.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 4/AGO",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Me desamaste - Carlos Sadness</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 28/AGO al 4/SEP",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Série <enf>Vida Perfecta</enf>",
+        "sub_text": "Producida por Corte y Confección. Dir. Arte Laia Teca",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 7/SEP y 24/SEP",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Snak with Fanta</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 2/OCT",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Fusión del Núcleo - Chica Sobresalto</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 3/OCT",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Adrenalina - Chica Sobresalto</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 5/OCT al 27/DIC",
+        "rol1": "REGIDOR_ART",
+        "rol2": "",
+        "text": "Película <enf>Donde Caben Dos</enf>",
+        "sub_text": "Producida por Filmax. Dir. Arte Roger Belles",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 26/OCT",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Cor petit - Júlia Mills</enf>",
+        "sub_text": "Producido por Vivir Rodando. Dir. Iñaki Mur",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 14/NOV",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Concierto en directo de  <enf>Chica Sobresalto</enf> (Pamplona, Auditorio Baluarte)",
+        "sub_text": "Producido por Astrolabi Films.",
+        "color": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "year": "2021",
+    "events": [
+      {
+        "data": "Del 26/ENE al 26/FEB",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Película <enf>Un día una noche</enf>",
+        "sub_text": "Producido por Bambú. Dir. Arte Laia Colet.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​​Del 30/ENE al 31/ENE",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Spot <enf>Xibeca - Estic a tot arreu</enf>",
+        "sub_text": "Producido por Las Mañanas  Dir. Bandidos",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 20/FEB",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Ja no t'espero - Guineu</enf>",
+        "sub_text": "Dir. Arnau Soria",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​Del 9/MAR al 11/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Fashionfilm <enf>Juliet</enf>",
+        "sub_text": "Producido por Palosanto Dir. Cesca Català",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 15/MAR al 26/MAR",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Carlsberg</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 27/MAR al 28/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>La cumbre - Cvpra</enf>",
+        "sub_text": "Producido por Palosanto. Dir. Yuse",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 16/ABR",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Rayban</enf>",
+        "sub_text": "Producido por Virtual Dir. Arte Laura Sabat",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 19/ABR al 3/MAY",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Primavera Cupra El Born</enf>",
+        "sub_text": "Producido por Primo Buenos Aires. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 7/MAY al 9/MAY",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Chicles - Jaqui Capdevila</enf>",
+        "sub_text": "Producido por Palosanto. Dir. Berta Pàmies",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 11/MAY al 18/MAY",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Seat Ibiza</enf>",
+        "sub_text": "Producido por Mama team. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 19/MAY",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Spot <enf>Devir</enf>",
+        "sub_text": "Producido por El Videoclub. Dir. Iñigo Sanjuan",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 29/MAY",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Crema Catalana</enf>",
+        "sub_text": "Dir. Pere Sala i Albert Capó",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 2/JUN al 15/JUN",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Peacock</enf>",
+        "sub_text": "Producido por TF7. Dir. Arte Andrea Batlló.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 8/JUN",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Spot <enf>ChupaChups</enf>",
+        "sub_text": "Producido por El Videoclub. Dir. Iñigo Sanjuan",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 16/JUN al 23/JUN",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Visa</enf>",
+        "sub_text": "Producido por TF7. Dir. Arte Cesar Martínez",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 24/JUN al 5/JUL",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Fisher Price</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 19/JUL al 27/JUL",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Movistar</enf>",
+        "sub_text": "Producido por Primo Buenos Aires  Dir. Arte Anna Colomer.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 28/JUL al 30/JUL",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Jack Daniel's</enf>",
+        "sub_text": "Producido por Widescope Productions  Dir. Arte Romain",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 12/AGO al 22/AGO",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Zara Men</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá. Dir. Arte Oian",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 6/SEP al 11/SEP",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Samsung</enf>",
+        "sub_text": "Producido por TF7. Dir. Arte Andrea Batlló.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 13/SEP al 23/DIC",
+        "rol1": "SET_DECORATOR_COORDINATOR",
+        "rol2": "",
+        "text": "Película <enf>Bird Box Spain</enf>",
+        "sub_text": "Prod. Nosotromo. P.D. Laia Colet. y Set Decorator Núria Guardia.",
+        "color": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "events": [
+      {
+        "data": "​​Del 7/ENE al 9/ENE",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Podcast <enf>2 rubias muy legales</enf>",
+        "sub_text": "Producido por Astrolabi Films  Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​​Del 10/ENE al 2/MAR",
+        "rol1": "SET_DECORATOR_COORDINATOR",
+        "rol2": "",
+        "text": "Película <enf>Bird Box Spain</enf>",
+        "sub_text": "Prod. Nosotromo. P.D. Laia Colet. y Set Decorator Núria Guardia.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​​Del 6/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>LVL1 - CO1N</enf>",
+        "sub_text": "Producido por Kinky Factory  Dir. Guillermo Aliana y Pedro Triviño",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​​Del 11/MAR  al 13/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Anuncio <enf>Bodorio x Badoo</enf>",
+        "sub_text": "Producido por Neurdas  Dir. Marco Laborda",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​Del 15/MAR  al 16/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Anuncio <enf>Devir Pocket</enf>",
+        "sub_text": "Producido por El Videoclub  Dir. Iñigo Sanjuan",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​Del 20/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Tu Chico - Carlos Sadness</enf>",
+        "sub_text": "Producido por Astrolabi Films  Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​​Del 21/MAR al 19/JUN",
+        "rol1": "AJUDANT_AMBIENTACIO",
+        "rol2": "",
+        "text": "Série <enf>Las Invisibles</enf>",
+        "sub_text": "Producida por El Diablerotro Dir. arte Marc Mateu",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​​Del 20/JUN al 17/OCT",
+        "rol1": "AMBIENTADOR",
+        "rol2": "",
+        "text": "Série <enf>La Mesias</enf>",
+        "sub_text": "Producida por Suma Content Dir. Arte Roger Belles",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​Del 11/OCT al 22/OCT",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio de <enf>Renault</enf>",
+        "sub_text": "Producido por Las Montañas del Canadá.  Dir. Arte Pitu",
+        "color": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "events": [
+      {
+        "data": "​​Del 9/ENE al 31/JUN",
+        "rol1": "REGIDOR_ART",
+        "rol2": "",
+        "text": "Serie <enf>Això no és  Suècia</enf>",
+        "sub_text": "Producida por Funicular Films & Nanouk Films P.D. Marc Pou y Dir. Art Eli Gomà.",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 11/FEB al 12/FEB",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Jo estic x tu - </enf>",
+        "sub_text": "Producida por - Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 16/JUN al 18/JUN",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Primera edición <enf>Festival Som(riu)</enf>",
+        "sub_text": "Producida por Cia Sinergia",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 29/JUN al 1/JUL",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Videoclip <enf>Utopia</enf>",
+        "sub_text": "Producida por Las Montañas del Canada Dir. Art Anna Colomer",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​​Del 21/AGO al 30/AGO",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio <enf>JBL</enf>",
+        "sub_text": "Producida por Las Montañas del Canada Dir. Art Cesar Martinez",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 1/SEP al 3/DIC",
+        "rol1": "REGIDOR_ART",
+        "rol2": "",
+        "text": "Serie <enf>Nudes</enf>",
+        "sub_text": "Producida por Vertigo Films Dir. Art Eli Gomà y Reyes Nuñez",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 30/OCT",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Per nosaltres i els de dalt - Joan Dausà</enf>",
+        "sub_text": "Producido por -  Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 31/OCT",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Anuncio <enf>Pla Endreça 2</enf>",
+        "sub_text": "Producido por Goroka Dir. Jordi Clusella",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 3/NOV al 6/NOV",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Cortometrage <enf>Solo KIM</enf>",
+        "sub_text": "Producido por Cariño Dir. Jordi Clusella",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "​​Del 4/DIC al 19/DIC",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio <enf>Optimum</enf>",
+        "sub_text": "Producida por Blur Dir. Art Javier Prieto",
+        "color": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "events": [
+      {
+        "data": "El 25/ENE",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Feliz feliz - Carlos Sadness</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 26/ENE",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Anuncio <enf>Brecha Salarial</enf>",
+        "sub_text": "Producido por Implicate . Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 31/ENE al 6/FEB",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio <enf>La Casera</enf>",
+        "sub_text": "Producido por Little Spain . Dir. Art Leila",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 5/MAR al 7/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Cortometrage <enf>Tejedora</enf>",
+        "sub_text": "Dir. Matep producido por Monaco",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 12/MAR al 13/MAR",
+        "rol1": "PROPS_BUYER",
+        "rol2": "",
+        "text": "Anuncio <enf>Avon</enf>",
+        "sub_text": "Producido por Twentyfor seven. Dir. Art Cesar Martinez",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 16/MAR",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Videoclip <enf>Big-Bang - Carlos Sadness</enf>",
+        "sub_text": "Producido por Astrolabi Films. Dir. Lyona Ivanova",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 18/MAR al 9/JUN",
+        "rol1": "REGIDOR_ART",
+        "rol2": "AJUDANT_ART",
+        "text": "Película <enf>La Furgo</enf>",
+        "sub_text": "Producida por Teidees Audiovisual. Dir. Art Eli Gomà",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "El 15/JUN al 16/JUN",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "Segunda edición del <enf>Festival Som(riu)</enf>",
+        "sub_text": "Producida por Cia Sinergia",
+        "color": "",
+        "link": ""
+      },
+      {
+        "data": "Del 8/JUL al 31/JUL",
+        "rol1": "AJUDANT_REGIDORA",
+        "rol2": "",
+        "text": "Película <enf>El Secreto del Orfebre</enf>",
+        "sub_text": "Producida por Nostromo Pictures. Dir. Art Anna Pujol",
+        "color": "",
+        "link": ""
+      }
+    ]
+  }
+]
