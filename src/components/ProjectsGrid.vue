@@ -3,7 +3,13 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import ProjectCard from './ProjectCard.vue'
 import rawProjects from '../assets/projects/manifest.json'
 
-const headerImages = import.meta.glob('../assets/projects/*/header.png', { eager: true, import: 'default' })
+const headerImages = import.meta.glob('../assets/projects/*/header.{png,jpg,jpeg,webp,gif,svg,avif}', { eager: true, import: 'default' })
+
+function findHeader(titol) {
+  const prefix = `../assets/projects/${titol}/header.`
+  const key = Object.keys(headerImages).find(k => k.startsWith(prefix))
+  return key ? headerImages[key] : ''
+}
 
 const projects = [...rawProjects].sort(() => Math.random() - 0.5)
 
@@ -43,10 +49,9 @@ const items = computed(() => {
     for (let c = 0; c < count; c++) {
       if (idx >= projects.length) break
       const proj = projects[idx]
-      const key = `../assets/projects/${proj.titol}/header.png`
       result.push({
         ...proj,
-        headerUrl: headerImages[key] || '',
+        headerUrl: findHeader(proj.titol),
         x: offsetX + c * cellW + cellW / 2 - totalW / 2,
         y: r * cellH + cellH / 2 - totalH / 2,
       })
