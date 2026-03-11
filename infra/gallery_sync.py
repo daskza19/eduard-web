@@ -138,6 +138,7 @@ def main():
         rol        = row.get("ROL", "").strip()
         img_header = row.get("IMATGE CAPÇALERA (FORA)", "").strip()
         img_main   = row.get("IMATGE GRAN (DINS)", "").strip()
+        video_type  = row.get("TIPO VIDEO", "").strip()
         video_url  = row.get("VIDEO", "").strip()
         carpeta    = row.get("LINK CARPETA AMB FOTOS", "").strip()
 
@@ -191,16 +192,21 @@ def main():
             print(f"     ⏭️  Sin imagen main")
 
         # Descargar vídeo
-        video_id = extract_file_id(video_url)
-        if video_id:
-            meta = get_file_metadata(video_id)
-            ext  = get_extension(meta)
-            dest = os.path.join(project_path, f"video{ext}")
-            if download_file(video_id, dest):
-                project_entry["video"] = f"video{ext}"
-                print(f"     🎬  video{ext} descargado")
+        project_entry["video_type"] = video_type
+        if(video_type == "Intern"):
+            video_id = extract_file_id(video_url)
+            if video_id:
+                meta = get_file_metadata(video_id)
+                ext  = get_extension(meta)
+                dest = os.path.join(project_path, f"video{ext}")
+                if download_file(video_id, dest):
+                    project_entry["video"] = f"video{ext}"
+                    print(f"     🎬  video{ext} descargado")
+            else:
+                print(f"     ⏭️  Sin vídeo")
         else:
-            print(f"     ⏭️  Sin vídeo")
+            project_entry["video"] = video_url
+            print(f"     🎬  vídeo externo: {video_url}")
 
         # Descargar archivos de la carpeta assets
         folder_id = extract_file_id(carpeta)

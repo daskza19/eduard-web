@@ -1,9 +1,11 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import ProjectCard from './ProjectCard.vue'
-import projects from '../assets/projects/manifest.json'
+import rawProjects from '../assets/projects/manifest.json'
 
 const headerImages = import.meta.glob('../assets/projects/*/header.png', { eager: true, import: 'default' })
+
+const projects = [...rawProjects].sort(() => Math.random() - 0.5)
 
 const screenWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1200)
 
@@ -32,6 +34,7 @@ const items = computed(() => {
   const result = []
   let idx = 0
 
+  
   for (let r = 0; r < pattern.length; r++) {
     const count = pattern[r]
     const rowW = count * cellW
