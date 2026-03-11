@@ -231,5 +231,184 @@
       "01.webp"
     ],
     "video_type": "YouTube"
+  },
+  {
+    "categoria": "ANUNCI",
+    "titol": "CHUPA CHUPS",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "Anunci per a Chupa Chups",
+    "data": "2021",
+    "productora": "MUA",
+    "rol": "ART DIRECTOR",
+    "header": "header.webp",
+    "main": "main.webp",
+    "video": "https://www.youtube.com/watch?v=4ZQdbu366Vw",
+    "assets": [
+      "06.webp",
+      "05.webp",
+      "04.webp",
+      "03.webp",
+      "02.webp",
+      "01.webp"
+    ],
+    "video_type": "YouTube"
+  },
+  {
+    "categoria": "VIDEOCLIP",
+    "titol": "CREMA CATALANA",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "Spxxn P",
+    "data": "2021",
+    "productora": "Kasba Music, 2021. Col·laborant amb Flattown Records",
+    "rol": "ART DIRECTOR",
+    "header": "header.webp",
+    "main": "main.webp",
+    "video": "https://www.youtube.com/watch?v=XcRBYTQk9sw",
+    "assets": [
+      "14.webp",
+      "13.webp",
+      "12.webp",
+      "11.webp",
+      "10.webp",
+      "09.webp",
+      "08.webp",
+      "07.webp",
+      "06.webp",
+      "05.webp",
+      "04.webp",
+      "03.webp",
+      "02.webp",
+      "01.webp"
+    ],
+    "video_type": "YouTube"
+  },
+  {
+    "categoria": "VIDEOCLIP",
+    "titol": "CHICLES",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "Jaqui Lin",
+    "data": "2021",
+    "productora": "Palosanto Studio",
+    "rol": "ART DIRECTOR",
+    "header": "header.webp",
+    "main": "main.webp",
+    "video": "https://www.youtube.com/watch?v=U2bzM5YLTJI",
+    "assets": [
+      "11.webp",
+      "10.webp",
+      "09.webp",
+      "08.webp",
+      "07.webp",
+      "06.webp",
+      "05.webp",
+      "04.webp",
+      "03.webp",
+      "02.webp",
+      "01.webp"
+    ],
+    "video_type": "YouTube"
+  },
+  {
+    "categoria": "VIDEOCLIP",
+    "titol": "La cumbre",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "Pau Corea",
+    "data": "2021",
+    "productora": "Palosanto Studio",
+    "rol": "ART DIRECTOR",
+    "header": "header.webp",
+    "main": "main.webp",
+    "video": "https://www.youtube.com/watch?v=arjU29zmuwA",
+    "assets": [
+      "03~1.webp",
+      "02~1.webp",
+      "01~1.webp"
+    ],
+    "video_type": "YouTube"
+  },
+  {
+    "categoria": "MODA",
+    "titol": "FF Juliet",
+    "tipografia": "Courier New', monospace",
+    "subtitol": null,
+    "data": "2021",
+    "productora": null,
+    "rol": "ART DIRECTOR",
+    "header": "header.webp",
+    "main": "main.webp",
+    "video": "",
+    "assets": [
+      "06.webp",
+      "05.webp",
+      "04.webp",
+      "03.webp",
+      "02.webp",
+      "01.webp"
+    ],
+    "video_type": ""
+  },
+  {
+    "categoria": "ANUNCI",
+    "titol": "He estat a tot arreu",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "Xibeca",
+    "data": "2021",
+    "productora": "Xibeca",
+    "rol": "ART DIRECTOR",
+    "header": "header.webp",
+    "main": "main.webp",
+    "video": "https://www.youtube.com/watch?v=Be-yVdbda0I",
+    "assets": [
+      "07.webp",
+      "06~1.webp",
+      "05~1.webp",
+      "04~1.webp",
+      "03~1.webp",
+      "02~1.webp",
+      "01~1.webp"
+    ],
+    "video_type": "YouTube"
+  },
+  {
+    "categoria": "VIDEOCLIP",
+    "titol": "Ja no t'espero",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "Guineu",
+    "data": "2021",
+    "productora": null,
+    "rol": "ART DIRECTOR",
+    "header": "header.webp",
+    "main": "main.webp",
+    "video": "https://www.youtube.com/watch?v=5A_8dPk5ies",
+    "assets": [
+      "04.webp",
+      "03.webp",
+      "02.webp",
+      "01.webp"
+    ],
+    "video_type": "YouTube"
+  },
+  {
+    "categoria": "VIDEOCLIP",
+    "titol": "Adrenalina",
+    "tipografia": "Inter', sans-serif",
+    "subtitol": "Chica sobresalto",
+    "data": "2021",
+    "productora": null,
+    "rol": "ART DIRECTOR",
+    "header": "header.webp",
+    "main": "main.webp",
+    "video": "https://www.youtube.com/watch?v=9xuEJsDz-NU",
+    "assets": [
+      "08.webp",
+      "07.webp",
+      "06.webp",
+      "05.webp",
+      "04.webp",
+      "03.webp",
+      "02.webp",
+      "01.webp"
+    ],
+    "video_type": "YouTube"
   }
 ]
