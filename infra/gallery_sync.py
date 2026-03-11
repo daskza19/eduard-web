@@ -139,7 +139,7 @@ def main():
         img_header = row.get("IMATGE CAPÇALERA (FORA)", "").strip()
         img_main   = row.get("IMATGE GRAN (DINS)", "").strip()
         video_type  = row.get("TIPO VIDEO", "").strip()
-        video_url  = row.get("VIDEO", "").strip()
+        video_url  = row.get("VIDEO LINK", "").strip()
         carpeta    = row.get("LINK CARPETA AMB FOTOS", "").strip()
 
         if not titol:
