@@ -2,6 +2,7 @@
 import NavBar from './components/NavBar.vue'
 import ProjectsGrid from './components/ProjectsGrid.vue'
 import Hero from './components/Hero.vue'
+import { vTextId } from './directives/textId.js'
 </script>
 
 <template>
@@ -11,14 +12,14 @@ import Hero from './components/Hero.vue'
   <ProjectsGrid />
 
   <section id="info" class="content-section">
-    <h2 class="section-title">SOBRE MÍ</h2>
+    <h2 class="section-title" v-text-id="'info_title'"></h2>
     <p class="section-text">
       Text provisional
     </p>
   </section>
 
   <section id="chronology" class="content-section">
-    <h2 class="section-title">CRONOLOGÍA</h2>
+    <h2 class="section-title" v-text-id="'chronology_title'"></h2>
     <div class="timeline">
       <div class="timeline-item" v-for="item in [
         { year: '2024', text: 'Test' },

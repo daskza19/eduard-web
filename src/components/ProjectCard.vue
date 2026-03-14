@@ -1,5 +1,8 @@
 <script setup>
 import { computed } from 'vue'
+import { useI18n } from '../composables/useI18n.js'
+
+const { t } = useI18n()
 
 const props = defineProps({
   titol: String,
@@ -9,6 +12,8 @@ const props = defineProps({
   headerUrl: String,
   projectType: String,
 })
+
+const translatedRol = computed(() => t(props.rol))
 
 const catColorMap = {
   VIDEOCLIP: 'var(--cat-videoclip-bg)',
@@ -28,7 +33,7 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
     <div class="cell-glow"></div>
     <div class="cell-info">
       <span class="cell-title" :style="{ fontFamily: tipografia }">{{ titol }}</span>
-      <span class="cell-rol" :class="rol">{{ rol }}</span>
+      <span class="cell-rol" :class="rol">{{ translatedRol }}</span>
       <span class="cell-type" :class="projectType">{{ projectType }}</span>
     </div>
   </div>

@@ -15,9 +15,8 @@
     <div class="hero-overlay" />
 
     <div class="hero-content">
-      <h1 class="hero-title">Eduard</h1>
-      <p class="hero-phrase">Text provisional
-      </p>
+      <h1 class="hero-title" v-text-id="'hero_title'"></h1>
+      <p class="hero-phrase" v-text-id="'hero_subtitle'"></p>
       <div class="scroll-hint">
         <span class="scroll-arrow">↓</span>
       </div>
@@ -26,7 +25,7 @@
 </template>
 
 <script setup>
-// No logic needed — autoplay is handled by the browser
+import { vTextId } from '../directives/textId.js'
 </script>
 
 <style scoped>
