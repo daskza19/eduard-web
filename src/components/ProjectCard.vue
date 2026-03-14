@@ -121,6 +121,31 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
   }
 }
 
+@media (max-width: 767px) {
+  .cell-info {
+    display: none;
+  }
+
+  .cell:hover .cell-bg {
+    filter: none;
+    transform: none;
+  }
+
+  .cell:hover .cell-bg::after {
+    opacity: 0;
+  }
+
+  .cell:hover .cell-glow {
+    opacity: 0.25;
+    transform: translate(-50%, -50%);
+  }
+
+  .cell:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
 .cell-glow {
   position: absolute;
   top: 50%;
