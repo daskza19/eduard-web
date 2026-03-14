@@ -129,7 +129,7 @@ function cellStyle(item, idx) {
 
 <template>
   <section id="projects" class="projects-section">
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">PROJECTES</h2>
     <div class="honeycomb" :style="{ '--cell-size': layout.size + 'px' }">
       <div
         v-for="(item, idx) in items"
@@ -148,7 +148,6 @@ function cellStyle(item, idx) {
 <style scoped>
 .projects-section {
   min-height: 100vh;
-  background: #0f0c29;
   padding: 6rem 1rem 4rem;
   overflow: hidden;
 }

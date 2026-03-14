@@ -31,9 +31,9 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 <template>
   <nav class="navbar" :class="{ visible }">
     <div class="nav-inner">
-      <a class="nav-link" :class="{ active: activeSection === 'projects' }" @click="scrollTo('projects')">Projects</a>
-      <a class="nav-link" :class="{ active: activeSection === 'info' }" @click="scrollTo('info')">Info</a>
-      <a class="nav-link" :class="{ active: activeSection === 'chronology' }" @click="scrollTo('chronology')">Chronology</a>
+      <a class="nav-link" :class="{ active: activeSection === 'projects' }" @click="scrollTo('projects')">PROJECTES</a>
+      <a class="nav-link" :class="{ active: activeSection === 'info' }" @click="scrollTo('info')">SOBRE MÍ</a>
+      <a class="nav-link" :class="{ active: activeSection === 'chronology' }" @click="scrollTo('chronology')">CRONOLOGÍA</a>
     </div>
   </nav>
 </template>
@@ -45,10 +45,10 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(15, 12, 41, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(73, 83, 62, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(72, 83, 61, 0.8);
   transform: translateY(-100%);
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.4s ease;
