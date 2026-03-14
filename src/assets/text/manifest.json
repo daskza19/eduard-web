@@ -1,0 +1,152 @@
+[
+  {
+    "key": "hero_title",
+    "traductions": [
+      {
+        "catalan": "EDUARD",
+        "spanish": "EDUARD",
+        "english": "EDUARD"
+      }
+    ]
+  },
+  {
+    "key": "hero_subtitle",
+    "traductions": [
+      {
+        "catalan": "Text provisional",
+        "spanish": "Texto provisional",
+        "english": "Provisional text"
+      }
+    ]
+  },
+  {
+    "key": "projects_title",
+    "traductions": [
+      {
+        "catalan": "PROJECTES",
+        "spanish": "PROYECTOS",
+        "english": "PROJECTS"
+      }
+    ]
+  },
+  {
+    "key": "info_title",
+    "traductions": [
+      {
+        "catalan": "SOBRE MÍ",
+        "spanish": "SOBRE MÍ",
+        "english": "ABOUT ME"
+      }
+    ]
+  },
+  {
+    "key": "chronology_title",
+    "traductions": [
+      {
+        "catalan": "CRONOLOGÍA",
+        "spanish": "CRONOLOGÍA",
+        "english": "CHRONOLOGY"
+      }
+    ]
+  },
+  {
+    "key": "DIRECTOR_ART",
+    "traductions": [
+      {
+        "catalan": "DIRECTOR D'ART",
+        "spanish": "DIRECTOR DE ARTE",
+        "english": "ART DIRECTOR"
+      }
+    ]
+  },
+  {
+    "key": "ATREZZISTA",
+    "traductions": [
+      {
+        "catalan": "ATREZZISTA",
+        "spanish": "ATREZZISTA",
+        "english": "PROPERTIES"
+      }
+    ]
+  },
+  {
+    "key": "INSTRUCTOR",
+    "traductions": [
+      {
+        "catalan": "INSTRUCTOR",
+        "spanish": "INSTRUCTOR",
+        "english": "INSTRUCTOR"
+      }
+    ]
+  },
+  {
+    "key": "AJUDANT_ART",
+    "traductions": [
+      {
+        "catalan": "AJUDANT D'ART",
+        "spanish": "AYUDANTE DE ARTE",
+        "english": "ART HELPER"
+      }
+    ]
+  },
+  {
+    "key": "AJUDANT_AMBIENTACIO",
+    "traductions": [
+      {
+        "catalan": "AJUDANT D'AMBIENTACIÓ",
+        "spanish": "AYUDANTE DE AMBIENTACIÓN",
+        "english": "ENVIRONMENTAL ASSISTANT"
+      }
+    ]
+  },
+  {
+    "key": "MERITORIO",
+    "traductions": [
+      {
+        "catalan": "MERITORI",
+        "spanish": "MERITORIO",
+        "english": "MERITORIOUS"
+      }
+    ]
+  },
+  {
+    "key": "PROPS_BUYER",
+    "traductions": [
+      {
+        "catalan": "PROPS BUYER",
+        "spanish": "PROPS BUYER",
+        "english": "PROPS BUYER"
+      }
+    ]
+  },
+  {
+    "key": "COORDINADOR_ATREZZO",
+    "traductions": [
+      {
+        "catalan": "COORDINADOR D'ATREZZO",
+        "spanish": "COORDINADOR DE ATREZZO",
+        "english": "ATREZZO COORDINATOR"
+      }
+    ]
+  },
+  {
+    "key": "REGIDOR_ART",
+    "traductions": [
+      {
+        "catalan": "REGIDOR D'ART",
+        "spanish": "REGIDOR DE ARTE",
+        "english": "ART ADMINISTRATOR"
+      }
+    ]
+  },
+  {
+    "key": "SET_DECORATOR_COORDINATOR",
+    "traductions": [
+      {
+        "catalan": "COORDINADOR DELS DECORADORS",
+        "spanish": "COORDINADOR DE LOS DECORADOS",
+        "english": "SET DECORATOR COORDINATOR"
+      }
+    ]
+  }
+]
