@@ -1,6 +1,7 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import ProjectCard from './ProjectCard.vue'
+import ProjectDetail from './ProjectDetail.vue'
 import rawProjects from '../assets/projects/manifest.json'
 
 const headerImages = import.meta.glob('../assets/projects/*/header.{png,jpg,jpeg,webp,gif,svg,avif}', { eager: true, import: 'default' })
@@ -30,6 +31,11 @@ const layout = computed(() => {
 })
 
 const hoveredIdx = ref(-1)
+const selectedProject = ref(null)
+
+function openProject(item) {
+  selectedProject.value = item
+}
 
 // --- Tunables ---
 const EDGE_SHRINK = 0.35       // how much smaller edge cards are (0 = same, 1 = invisible)
@@ -138,10 +144,17 @@ function cellStyle(item, idx) {
         :style="cellStyle(item, idx)"
         @mouseenter="hoveredIdx = idx"
         @mouseleave="hoveredIdx = -1"
+        @click="openProject(item)"
       >
         <ProjectCard :titol="item.titol" :tipografia="item.tipografia" :rol="item.rol" :color="item.color" :headerUrl="item.headerUrl" :projectType="item.categoria" />
       </div>
     </div>
+
+    <ProjectDetail
+      v-if="selectedProject"
+      :project="selectedProject"
+      @close="selectedProject = null"
+    />
   </section>
 </template>
 
