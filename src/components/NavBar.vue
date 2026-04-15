@@ -8,7 +8,7 @@ const { currentLang, LANGUAGES, LANG_LABELS, setLang } = useI18n()
 const visible = ref(false)
 const activeSection = ref('projects')
 
-const sections = ['projects', 'info', 'chronology']
+const sections = ['projects', 'info', 'chronology', 'contact']
 
 function onScroll() {
   visible.value = window.scrollY > window.innerHeight * 0.8
@@ -39,6 +39,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
         <a class="nav-link" :class="{ active: activeSection === 'projects' }" @click="scrollTo('projects')" v-text-id="'projects_title'"></a>
         <a class="nav-link" :class="{ active: activeSection === 'info' }" @click="scrollTo('info')" v-text-id="'info_title'"></a>
         <a class="nav-link" :class="{ active: activeSection === 'chronology' }" @click="scrollTo('chronology')" v-text-id="'chronology_title'"></a>
+        <a class="nav-link" :class="{ active: activeSection === 'contact' }" @click="scrollTo('contact')" v-text-id="'contact_title'"></a>
       </div>
 
       <div class="lang-selector">

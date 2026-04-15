@@ -3,6 +3,7 @@ import NavBar from './components/NavBar.vue'
 import ProjectsGrid from './components/ProjectsGrid.vue'
 import Hero from './components/Hero.vue'
 import Chronology from './components/Chronology.vue'
+import Contact from './components/Contact.vue'
 import { vTextId } from './directives/textId.js'
 </script>
 
@@ -20,6 +21,7 @@ import { vTextId } from './directives/textId.js'
   </section>
 
   <Chronology />
+  <Contact />
 </template>
 
 <style scoped>
