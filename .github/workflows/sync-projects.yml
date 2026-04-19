@@ -3,6 +3,10 @@ name: Gallery Update from Google Drive
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   process:
     runs-on: ubuntu-latest
@@ -30,3 +34,8 @@ jobs:
           git add .
           git diff --cached --quiet || git commit -m "chore: update gallery from Google Drive"
           git push origin main
+
+      - name: Trigger deploy
+        run: gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
