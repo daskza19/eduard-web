@@ -76,15 +76,6 @@ const socials = [
 
             <span>{{ s.name }}</span>
           </a>
-
-          <!-- Email directo -->
-          <a href="mailto:josep.arbona@gmail.com" class="social-link" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="4" width="20" height="16" rx="2"/>
-              <path d="M22 4L12 13 2 4"/>
-            </svg>
-            <span>Email</span>
-          </a>
         </div>
       </div>
 
