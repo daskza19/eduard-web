@@ -43,8 +43,6 @@ const socials = [
 
 <template>
   <section id="contact" class="contact">
-    <h2 class="contact-title" v-text-id="'contact_title'"></h2>
-
     <div class="contact-grid">
       <!-- Redes sociales -->
       <div class="contact-socials">

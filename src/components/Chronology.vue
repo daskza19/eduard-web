@@ -163,7 +163,6 @@ onUnmounted(() => {
 <template>
   <section id="chronology" ref="sectionRef" class="chrono" :style="{ height: totalHeight + 'px' }">
     <div class="sticky">
-      <h2 class="title" v-text-id="'chronology_title'"></h2>
       <div class="columns">
         <!-- Year wheel -->
         <div class="wheel year-col">

@@ -104,6 +104,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   cursor: pointer;
   transition: color 0.3s, font-size 0.3s;
   user-select: none;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -155,7 +156,9 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   }
 
   .nav-links {
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
   }
 
   .lang-selector {

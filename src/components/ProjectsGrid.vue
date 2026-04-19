@@ -135,7 +135,6 @@ function cellStyle(item, idx) {
 
 <template>
   <section id="projects" class="projects-section">
-    <h2 class="section-title">PROJECTES</h2>
     <div class="honeycomb" :style="{ '--cell-size': layout.size + 'px' }">
       <div
         v-for="(item, idx) in items"

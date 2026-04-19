@@ -4,6 +4,7 @@ import ProjectsGrid from './components/ProjectsGrid.vue'
 import Hero from './components/Hero.vue'
 import Chronology from './components/Chronology.vue'
 import Contact from './components/Contact.vue'
+import AboutMe from './components/AboutMe.vue'
 import { vTextId } from './directives/textId.js'
 </script>
 
@@ -13,12 +14,7 @@ import { vTextId } from './directives/textId.js'
 
   <ProjectsGrid />
 
-  <section id="info" class="content-section">
-    <h2 class="section-title" v-text-id="'info_title'"></h2>
-    <p class="section-text">
-      Text provisional
-    </p>
-  </section>
+  <AboutMe />
 
   <Chronology />
   <Contact />
