@@ -64,10 +64,10 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(73, 83, 62, 0.85);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(72, 83, 61, 0.8);
+  border-bottom: 1px solid rgba(60, 60, 60, 0.8);
   transform: translateY(-100%);
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.4s ease;

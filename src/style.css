@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Brams';
+  src: url('./assets/fonts/Brams-K7DWW.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GingerBrand';
+  src: url('./assets/fonts/GingerBrand.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Category colors: background / border */
   --cat-videoclip-bg: rgb(235, 84, 84);
@@ -12,6 +28,7 @@
   --cat-anunci-border: rgb(153, 122, 49);
   --cat-director-art-bg: rgb(84, 235, 177);
   --cat-director-art-border: rgb(49, 153, 110);
+  --main-primary: rgb(24, 24, 24);
 }
 
 * {
@@ -28,7 +45,7 @@ body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(145, 166, 124);
+  background: var(--main-primary);
 }
 
 #app {

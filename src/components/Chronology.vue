@@ -295,12 +295,12 @@ onUnmounted(() => {
 
 .fade-t {
   top: 0;
-  background: linear-gradient(to bottom, rgb(145, 166, 124) 15%, transparent);
+  background: linear-gradient(to bottom, rgb(24, 24, 24) 15%, transparent);
 }
 
 .fade-b {
   bottom: 0;
-  background: linear-gradient(to top, rgb(145, 166, 124) 15%, transparent);
+  background: linear-gradient(to top, rgb(24, 24, 24) 15%, transparent);
 }
 
 /* ── Year items ── */

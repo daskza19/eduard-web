@@ -16,7 +16,8 @@
 
     <div class="hero-content">
       <canvas ref="lottieCanvas" class="hero-lottie"></canvas>
-      <p class="hero-phrase" v-text-id="'hero_title'"></p>
+      <h1 class="hero-phrase" v-text-id="'hero_title'"></h1>
+      <p class="hero-subtitle" v-text-id="'hero_subtitle'"></p>
     </div>
   </section>
 </template>
@@ -73,10 +74,10 @@ onUnmounted(() => {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(145, 166, 124, 0.01) 0%,
-    rgba(145, 166, 124, 0.01) 50%,
-    rgba(145, 166, 124, 0.4) 85%,
-    rgba(145, 166, 124, 1.0) 100%
+    rgba(24,24,24, 0.01) 0%,
+    rgba(24,24,24, 0.01) 50%,
+    rgba(24,24,24, 0.4) 80%,
+    rgba(24,24,24, 1.0) 100%
   );
   z-index: 1;
 }
@@ -91,6 +92,7 @@ onUnmounted(() => {
   object-position: center;
   z-index: 0;
   pointer-events: none;
+  filter: saturate(150%);
 }
 
 /* ── Contenido centrado ── */
@@ -106,15 +108,24 @@ onUnmounted(() => {
 }
 
 .hero-lottie {
-  width: clamp(280px, 50vw, 600px);
+  width:  clamp(350px, 50vw, 600px);
   height: auto;
 }
 
 .hero-phrase {
-  font-size: clamp(1.25rem, 3vw, 1.25rem);
+  font-family: 'Brams', sans-serif;
+  font-size: 5rem;
   font-weight: 500;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 0.1rem 0.2rem;
-  background: rgb(255, 255, 255);
+  line-height: 4rem;
+}
+
+.hero-subtitle {
+  font-family: 'GingerBrand', sans-serif;
+  font-size: clamp(2rem, 2vw, 2.5rem);
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  margin: 0;
 }
 </style>

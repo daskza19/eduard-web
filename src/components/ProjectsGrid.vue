@@ -38,7 +38,7 @@ function openProject(item) {
 }
 
 // --- Tunables ---
-const EDGE_SHRINK = 0.35       // how much smaller edge cards are (0 = same, 1 = invisible)
+const EDGE_SHRINK = 0       // how much smaller edge cards are (0 = same, 1 = invisible)
 const HOVER_SCALE = 1.1       // scale of the hovered card
 const NEIGHBOR_BOOST = 0.2    // max extra scale for nearby cards on hover
 const NEIGHBOR_MAX = 1.05      // cap scale for neighbor cards
