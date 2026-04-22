@@ -447,7 +447,7 @@ onUnmounted(() => {
   }
 
   .sticky {
-    padding: 1rem;
+    padding: 6rem 0 2rem 0;
   }
 
   .title {
