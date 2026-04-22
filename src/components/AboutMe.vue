@@ -1,5 +1,8 @@
 <script setup>
 import { vTextId } from '../directives/textId.js'
+import { useI18n } from '../composables/useI18n.js'
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -13,7 +16,7 @@ import { vTextId } from '../directives/textId.js'
         <div class="photo-area">
           <div class="photo-circle-bg"></div>
           <img
-            src="../assets/images/hero.jpg"
+            src="../assets/images/about-photo.webp"
             alt="Edu Arbona"
             class="about-photo"
           />
@@ -22,25 +25,15 @@ import { vTextId } from '../directives/textId.js'
 
       <!-- Right: greeting + bio -->
       <div class="about-right">
-        <h2 class="greeting">¡Hola!</h2>
+        <h2 class="greeting" v-text-id="'about_greeting'"></h2>
 
         <div class="bio-card">
-          <p>
-            Soy <span class="highlight">Edu Arbona</span>, tengo 30 años y aquí os dejo mi reel-web.
-          </p>
-          <p>
-            Esto pretende ser un <span class="underline-accent">recopilatorio de proyectos</span> que he hecho a lo largo de los tiempos.
-          </p>
-          <p>
-            En 2018 finalicé mis estudios en la ESCAC, especializándome en
-            <span class="highlight">Dirección de Arte</span> y actualmente estoy trabajando como:
-            <span class="highlight">Regidor</span>, <span class="highlight">Props buyer</span> y/o <span class="highlight">Director de Arte</span>.
-          </p>
+          <p v-html="t('about_bio_1')"></p>
+          <p v-html="t('about_bio_2')"></p>
+          <p v-html="t('about_bio_3')"></p>
         </div>
 
-        <p class="tagline">
-          Amante de la naturaleza 🌿, los colores 🎨 y las texturas 🏕.
-        </p>
+        <p class="tagline" v-text-id="'about_tagline'"></p>
       </div>
     </div>
 
@@ -163,7 +156,7 @@ import { vTextId } from '../directives/textId.js'
   line-height: 1.75;
 }
 
-.highlight {
+.bio-card :deep(.highlight) {
   background: rgba(255, 255, 255, 0.12);
   padding: 0.1em 0.45em;
   border-radius: 0.3em;
@@ -171,7 +164,7 @@ import { vTextId } from '../directives/textId.js'
   color: #fff;
 }
 
-.underline-accent {
+.bio-card :deep(.underline-accent) {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-color: rgba(255, 255, 255, 0.4);

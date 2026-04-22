@@ -15,17 +15,45 @@
     <div class="hero-overlay" />
 
     <div class="hero-content">
-      <h1 class="hero-title" v-text-id="'hero_title'"></h1>
-      <p class="hero-phrase" v-text-id="'hero_subtitle'"></p>
-      <div class="scroll-hint">
-        <span class="scroll-arrow">↓</span>
-      </div>
+      <canvas ref="lottieCanvas" class="hero-lottie"></canvas>
+      <p class="hero-phrase" v-text-id="'hero_title'"></p>
     </div>
   </section>
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+import { DotLottie } from '@lottiefiles/dotlottie-web'
 import { vTextId } from '../directives/textId.js'
+import lottieUrl from '../assets/images/EDUARD LOGO.lottie?url'
+
+const lottieCanvas = ref(null)
+let dotLottie = null
+
+function resizeCanvas() {
+  const canvas = lottieCanvas.value
+  if (!canvas) return
+  const dpr = window.devicePixelRatio || 1
+  const rect = canvas.getBoundingClientRect()
+  canvas.width = rect.width * dpr
+  canvas.height = rect.height * dpr
+}
+
+onMounted(() => {
+  resizeCanvas()
+  dotLottie = new DotLottie({
+    canvas: lottieCanvas.value,
+    src: lottieUrl,
+    autoplay: true,
+    loop: true,
+  })
+  window.addEventListener('resize', resizeCanvas)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', resizeCanvas)
+  if (dotLottie) dotLottie.destroy()
+})
 </script>
 
 <style scoped>
@@ -77,37 +105,16 @@ import { vTextId } from '../directives/textId.js'
   gap: 1rem;
 }
 
-.hero-title {
-  font-size: clamp(3rem, 8vw, 7rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  margin: 0;
+.hero-lottie {
+  width: clamp(280px, 50vw, 600px);
+  height: auto;
 }
 
 .hero-phrase {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0;
-}
-
-/* ── Scroll hint ── */
-.scroll-hint {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.scroll-arrow {
-  font-size: 3rem;
-  color: rgb(145, 166, 124);
-  animation: bounce 2s ease-in-out infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0);   opacity: 0.8; }
-  50%       { transform: translateY(8px); opacity: 1;   }
+  font-size: clamp(1.25rem, 3vw, 1.25rem);
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  padding: 0.1rem 0.2rem;
+  background: rgb(255, 255, 255);
 }
 </style>

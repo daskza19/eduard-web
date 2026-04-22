@@ -114,13 +114,14 @@ onUnmounted(() => {
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   animation: fadeIn 0.3s ease;
+  padding: 2rem;
 }
 
 @keyframes fadeIn {
@@ -131,11 +132,10 @@ onUnmounted(() => {
 /* ── Modal ── */
 .detail-modal {
   position: relative;
-  background: #1a1e16;
-  width: 90vw;
-  max-height: 90vh;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-height: 100%;
   overflow-y: auto;
-  border-radius: 1rem;
   scrollbar-width: thin;
   scrollbar-color: rgba(145, 166, 124, 0.4) transparent;
   padding: 0;
@@ -148,12 +148,11 @@ onUnmounted(() => {
   right: calc(5vw + 1rem);
   z-index: 210;
   background: rgba(0, 0, 0, 0.5);
-  border: none;
+  border: 1px solid rgb(145, 166, 124);
   color: #fff;
   font-size: 2rem;
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -189,12 +188,11 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
   width: 30vw;
   margin-top: 2vw;
   margin-left: 2vw;
-  border-radius: 2rem;
 }
 
 .hero-title {
@@ -242,7 +240,6 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 0.5rem;
 }
 
 /* ── 3. Gallery section ── */
@@ -262,7 +259,6 @@ onUnmounted(() => {
 
 .gallery-img {
   width: 100%;
-  border-radius: 0.5rem;
   object-fit: cover;
   aspect-ratio: 1;
   transition: transform 0.3s ease;
@@ -274,6 +270,10 @@ onUnmounted(() => {
 
 /* ── Mobile: fullscreen ── */
 @media (max-width: 767px) {
+  .detail-overlay {
+    padding: 0;
+  }
+
   .detail-modal {
     width: 100vw;
     max-width: none;
@@ -288,7 +288,13 @@ onUnmounted(() => {
   }
 
   .hero-info {
-    padding: 2rem 1.5rem;
+    border-top: 1px solid rgb(145, 166, 124);
+    border-bottom: 1px solid rgb(145, 166, 124);
+    top: 8vh;
+    padding: 1rem 1.5rem;
+    margin: 0;
+    width: 100vw;
+    height: fit-content;
   }
 
   .detail-video {

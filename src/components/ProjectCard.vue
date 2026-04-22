@@ -44,7 +44,7 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
   width: var(--cell-size, 170px);
   height: var(--cell-size, 170px);
   background-color: rgba(255, 255, 255, 0.04);
-  border: 3px solid;
+  border: 2px solid;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,6 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
   gap: 0.5rem;
   overflow: hidden;
   position: relative;
-  border-radius: 0.5rem;
   transition: transform 0.35s ease,
               box-shadow 0.35s ease,
               border-color 0.35s ease,

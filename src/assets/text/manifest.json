@@ -248,5 +248,55 @@
         "english": "Error sending the message. Please try again."
       }
     ]
+  },
+  {
+    "key": "about_greeting",
+    "traductions": [
+      {
+        "catalan": "Hola!",
+        "spanish": "¡Hola!",
+        "english": "Hello!"
+      }
+    ]
+  },
+  {
+    "key": "about_bio_1",
+    "traductions": [
+      {
+        "catalan": "Soc l'<span class=\"highlight\">Edu Arbona</span>, tinc 30 anys i aquí us deixo el meu reel-web.",
+        "spanish": "Soy <span class=\"highlight\">Edu Arbona</span>, tengo 30 años y aquí os dejo mi reel-web.",
+        "english": "I'm <span class=\"highlight\">Edu Arbona</span>, I'm 30 years old and here's my reel-web."
+      }
+    ]
+  },
+  {
+    "key": "about_bio_2",
+    "traductions": [
+      {
+        "catalan": "Això pretén ser un <span class=\"underline-accent\">recopilatori de projectes</span> que he fet al llarg dels temps.",
+        "spanish": "Esto pretende ser un <span class=\"underline-accent\">recopilatorio de proyectos</span> que he hecho a lo largo de los tiempos.",
+        "english": "This is meant to be a <span class=\"underline-accent\">collection of projects</span> I've done over the years."
+      }
+    ]
+  },
+  {
+    "key": "about_bio_3",
+    "traductions": [
+      {
+        "catalan": "El 2018 vaig finalitzar els meus estudis a l'ESCAC, especialitzant-me en <span class=\"highlight\">Direcció d'Art</span> i actualment estic treballant com a: <span class=\"highlight\">Regidor</span>, <span class=\"highlight\">Props buyer</span> i/o <span class=\"highlight\">Director d'Art</span>.",
+        "spanish": "En 2018 finalicé mis estudios en la ESCAC, especializándome en <span class=\"highlight\">Dirección de Arte</span> y actualmente estoy trabajando como: <span class=\"highlight\">Regidor</span>, <span class=\"highlight\">Props buyer</span> y/o <span class=\"highlight\">Director de Arte</span>.",
+        "english": "In 2018 I finished my studies at ESCAC, specializing in <span class=\"highlight\">Art Direction</span> and I'm currently working as: <span class=\"highlight\">Stage Manager</span>, <span class=\"highlight\">Props buyer</span> and/or <span class=\"highlight\">Art Director</span>."
+      }
+    ]
+  },
+  {
+    "key": "about_tagline",
+    "traductions": [
+      {
+        "catalan": "Amant de la natura 🌿, els colors 🎨 i les textures 🏕.",
+        "spanish": "Amante de la naturaleza 🌿, los colores 🎨 y las texturas 🏕.",
+        "english": "Nature lover 🌿, colors 🎨 and textures 🏕."
+      }
+    ]
   }
 ]
