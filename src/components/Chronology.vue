@@ -3,8 +3,11 @@ import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { vTextId } from '../directives/textId.js'
 import chronologyData from '../assets/chronology/manifest.json'
 
-// Chronological order: oldest first
-const data = [...chronologyData]
+// Reverse chronological order: newest first
+const data = [...chronologyData].reverse().map(y => ({
+  ...y,
+  events: [...y.events].reverse()
+}))
 const years = data.map(y => y.year)
 
 // Flatten all events preserving year reference
