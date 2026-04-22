@@ -920,5 +920,19 @@
         "link": ""
       }
     ]
+  },
+  {
+    "year": "2025",
+    "events": [
+      {
+        "data": "Del 2/GEN al 4/FEB",
+        "rol1": "DIRECTOR_ART",
+        "rol2": "",
+        "text": "He fet <enf>Crims</enf>",
+        "sub_text": "Goroka",
+        "color": "",
+        "link": ""
+      }
+    ]
   }
 ]
