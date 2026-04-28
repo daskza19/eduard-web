@@ -298,5 +298,65 @@
         "english": "Nature lover 🌿, colors 🎨 and textures 🏕."
       }
     ]
+  },
+  {
+    "key": "tots",
+    "traductions": [
+      {
+        "catalan": "TOTS",
+        "spanish": "TODOS",
+        "english": "ALL"
+      }
+    ]
+  },
+  {
+    "key": "videoclip",
+    "traductions": [
+      {
+        "catalan": "VIDEOCLIP",
+        "spanish": "VIDEOCLIP",
+        "english": "VIDEOCLIP"
+      }
+    ]
+  },
+  {
+    "key": "anunci",
+    "traductions": [
+      {
+        "catalan": "ANUNCI",
+        "spanish": "ANUNCIO",
+        "english": "AD"
+      }
+    ]
+  },
+  {
+    "key": "moda",
+    "traductions": [
+      {
+        "catalan": "MODA",
+        "spanish": "MODA",
+        "english": "FASHION"
+      }
+    ]
+  },
+  {
+    "key": "podcast",
+    "traductions": [
+      {
+        "catalan": "PODCAST",
+        "spanish": "PODCAST",
+        "english": "PODCAST"
+      }
+    ]
+  },
+  {
+    "key": "festival",
+    "traductions": [
+      {
+        "catalan": "FESTIVAL",
+        "spanish": "FESTIVAL",
+        "english": "FESTIVAL"
+      }
+    ]
   }
 ]
