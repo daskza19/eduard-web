@@ -1,8 +1,13 @@
+import { useI18n } from '../composables/useI18n.js'
+const { t } = useI18n()
 <script setup>
+
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import ProjectCard from './ProjectCard.vue'
 import ProjectDetail from './ProjectDetail.vue'
 import rawProjects from '../assets/projects/manifest.json'
+import { useI18n } from '../composables/useI18n.js'
+const { t } = useI18n()
 
 const headerImages = import.meta.glob('../assets/projects/*/header.{png,jpg,jpeg,webp,gif,svg,avif}', { eager: true, import: 'default' })
 
@@ -181,7 +186,7 @@ function cellStyle(item, idx) {
         :class="{ selected: !selectedCategory }"
         @click="selectedCategory = null"
       >
-        Todas
+        {{ t('tots') }}
       </span>
       <span
         v-for="cat in categories"
@@ -190,7 +195,7 @@ function cellStyle(item, idx) {
         :class="{ selected: selectedCategory === cat }"
         @click="selectedCategory = cat"
       >
-        {{ cat }}
+        {{ t(cat && cat.toLowerCase()) }}
       </span>
     </div>
     <div class="honeycomb" :style="{ '--cell-size': layout.size + 'px' }">

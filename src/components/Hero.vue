@@ -38,6 +38,10 @@ function resizeCanvas() {
   const rect = canvas.getBoundingClientRect()
   canvas.width = rect.width * dpr
   canvas.height = rect.height * dpr
+  // Redimensiona la animación Lottie si existe
+  if (dotLottie && typeof dotLottie.resize === 'function') {
+    dotLottie.resize();
+  }
 }
 
 onMounted(() => {

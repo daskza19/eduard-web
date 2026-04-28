@@ -34,7 +34,7 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
     <div class="cell-info">
       <span class="cell-title" :style="{ fontFamily: tipografia }">{{ titol }}</span>
       <span class="cell-rol">{{ translatedRol }}</span>
-      <span class="cell-type">{{ projectType }}</span>
+      <span class="cell-type">{{ t(projectType && projectType.toLowerCase()) }}</span>
     </div>
   </div>
 </template>

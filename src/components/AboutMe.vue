@@ -45,8 +45,6 @@ const { t } = useI18n()
 <style scoped>
 .about {
   position: relative;
-  min-height: 90vh;
-  padding: 5rem 2rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;

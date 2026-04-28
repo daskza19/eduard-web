@@ -358,7 +358,7 @@ onUnmounted(() => {
   font-size: 0.8rem;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.75);
-  background: rgba(82, 95, 70, 0.55);
+  background: var(--main-primary-light-chars);
   padding: 0.12rem 0.45rem;
   border-radius: 3px;
   letter-spacing: 0.04em;
