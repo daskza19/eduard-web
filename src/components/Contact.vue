@@ -36,8 +36,7 @@ async function handleSubmit() {
 
 const socials = [
   { name: 'Instagram', url: 'https://www.instagram.com/youngard/', icon: 'instagram' },
-  { name: 'Vimeo', url: 'https://vimeo.com/youngard', icon: 'vimeo' },
-  { name: 'YouTube', url: 'https://www.youtube.com/c/eduardsanchezarbona', icon: 'youtube' }
+  { name: 'Vimeo', url: 'https://vimeo.com/youngard', icon: 'vimeo' }
 ]
 </script>
 
@@ -66,10 +65,6 @@ const socials = [
             <!-- Vimeo -->
             <svg v-else-if="s.icon === 'vimeo'" viewBox="0 0 24 24" fill="currentColor">
               <path d="M22 7.42c-.1 2.1-1.56 4.98-4.38 8.64C14.7 19.94 12.18 22 10.1 22c-1.28 0-2.38-1.18-3.26-3.56L5.16 12.3C4.54 9.92 3.86 8.74 3.12 8.74c-.16 0-.74.34-1.72 1.04L0 8.08c1.08-.96 2.14-1.92 3.2-2.86 1.44-1.24 2.52-1.9 3.24-1.96 1.7-.16 2.76 1 3.16 3.5.44 2.68.74 4.36.92 5.02.5 2.3 1.06 3.46 1.66 3.46.46 0 1.18-.74 2.12-2.22.94-1.48 1.46-2.6 1.52-3.38.14-1.28-.36-1.92-1.52-1.92-.54 0-1.1.12-1.68.38 1.12-3.66 3.24-5.44 6.4-5.32 2.34.06 3.44 1.58 3.32 4.56z"/>
-            </svg>
-            <!-- YouTube -->
-            <svg v-else-if="s.icon === 'youtube'" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.54 15.57V8.43L15.82 12l-6.28 3.57z"/>
             </svg>
 
             <span>{{ s.name }}</span>

@@ -12,7 +12,24 @@ function findHeader(titol) {
   return key ? headerImages[key] : ''
 }
 
-const projects = [...rawProjects].sort(() => Math.random() - 0.5)
+
+// Mostrar los proyectos en el orden inverso al del manifest.json
+const projects = [...rawProjects].reverse();
+
+// Chips de categorías
+const categories = computed(() => {
+  // Extraer categorías únicas en el orden de aparición (inverso)
+  const set = new Set();
+  projects.forEach(p => set.add(p.categoria));
+  return Array.from(set);
+});
+
+const selectedCategory = ref(null); // null = todas
+
+const filteredProjects = computed(() => {
+  if (!selectedCategory.value) return projects;
+  return projects.filter(p => p.categoria === selectedCategory.value);
+});
 
 const screenWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1200)
 
@@ -25,9 +42,30 @@ onUnmounted(() => window.removeEventListener('resize', onResize))
 
 const layout = computed(() => {
   const w = screenWidth.value
-  if (w < 480) return { pattern: [3, 4, 3, 4, 3, 4, 3, 4], size: 90, gap: 8 }
-  if (w < 768) return { pattern: [3, 4, 3, 4, 3, 4, 3, 4], size: 110, gap: 10 }
-  return { pattern: [5, 6, 7, 6, 5], size: 170, gap: 16 }
+  // Definir patrones y tamaños base
+  let pattern, baseSize, gap
+  if (w < 480) {
+    pattern = [3, 4, 3, 4, 3, 4, 3, 4];
+    baseSize = 90;
+    gap = 8;
+  } else if (w < 768) {
+    pattern = [3, 4, 3, 4, 3, 4, 3, 4];
+    baseSize = 110;
+    gap = 10;
+  } else {
+    pattern = [5, 6, 7, 6, 5];
+    baseSize = 170;
+    gap = 16;
+  }
+  // Calcular el ancho máximo de la grid
+  const maxRow = Math.max(...pattern);
+  const maxGridWidth = w - 32; // padding de la sección
+  const totalCardWidth = maxRow * baseSize + (maxRow - 1) * gap;
+  let size = baseSize;
+  if (totalCardWidth > maxGridWidth) {
+    size = Math.floor((maxGridWidth - (maxRow - 1) * gap) / maxRow);
+  }
+  return { pattern, size, gap };
 })
 
 const hoveredIdx = ref(-1)
@@ -48,6 +86,7 @@ const items = computed(() => {
   const { pattern, size, gap } = layout.value
   const totalRows = pattern.length
   const midRow = (totalRows - 1) / 2
+  const projs = filteredProjects.value;
 
   // First pass: assign to rows and compute scale per card
   const rows = []
@@ -57,8 +96,8 @@ const items = computed(() => {
     const midCol = (count - 1) / 2
     const row = []
     for (let c = 0; c < count; c++) {
-      if (idx >= projects.length) break
-      const proj = projects[idx++]
+      if (idx >= projs.length) break
+      const proj = projs[idx++]
       const ny = midRow > 0 ? (r - midRow) / midRow : 0
       const nx = midCol > 0 ? (c - midCol) / midCol : 0
       const dist = Math.sqrt(nx * nx + ny * ny)
@@ -135,10 +174,29 @@ function cellStyle(item, idx) {
 
 <template>
   <section id="projects" class="projects-section">
+    <!-- Chips de categorías -->
+    <div class="category-chips-row">
+      <span
+        class="category-chip"
+        :class="{ selected: !selectedCategory }"
+        @click="selectedCategory = null"
+      >
+        Todas
+      </span>
+      <span
+        v-for="cat in categories"
+        :key="cat"
+        class="category-chip"
+        :class="{ selected: selectedCategory === cat }"
+        @click="selectedCategory = cat"
+      >
+        {{ cat }}
+      </span>
+    </div>
     <div class="honeycomb" :style="{ '--cell-size': layout.size + 'px' }">
       <div
         v-for="(item, idx) in items"
-        :key="item.id"
+        :key="item.id + '-' + idx"
         class="cell-wrapper"
         :style="cellStyle(item, idx)"
         @mouseenter="hoveredIdx = idx"
@@ -158,10 +216,39 @@ function cellStyle(item, idx) {
 </template>
 
 <style scoped>
+
 .projects-section {
   min-height: 100vh;
   padding: 6rem 1rem 4rem;
   overflow: hidden;
+}
+
+.category-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.category-chip {
+  display: inline-block;
+  padding: 0.18rem 0.9rem;
+  border-radius: 99px;
+  color: var(--main-primary-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--main-primary-light-border);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  user-select: none;
+}
+.category-chip.selected, .category-chip:hover {
+  background: var(--main-primary-light);
+  color: var(--main-primary);
+  border: 1px solid var(--main-primary-light-border);
 }
 
 .section-title {
@@ -174,11 +261,15 @@ function cellStyle(item, idx) {
 
 .honeycomb {
   position: relative;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .cell-wrapper {

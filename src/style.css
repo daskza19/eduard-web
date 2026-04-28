@@ -27,8 +27,12 @@
   --cat-anunci-bg: rgb(235, 182, 84);
   --cat-anunci-border: rgb(153, 122, 49);
   --cat-director-art-bg: rgb(84, 235, 177);
-  --cat-director-art-border: rgb(49, 153, 110);
+  --cat-director-art-border: rgb(36, 105, 76);
+  --cat-director-art-chars: rgb(23, 66, 48);
   --main-primary: rgb(24, 24, 24);
+  --main-primary-light: rgb(190, 190, 190);
+  --main-primary-light-border: rgb(88, 88, 88);
+  --main-primary-light-chars: rgb(49, 49, 49);
 }
 
 * {

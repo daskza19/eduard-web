@@ -28,13 +28,13 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
 </script>
 
 <template>
-  <div class="cell" :class="projectType" :style="{ '--accent': color, '--cat-color': catColor }">
+  <div class="cell">
     <div class="cell-bg" :style="{ backgroundImage: headerUrl ? `url(${JSON.stringify(headerUrl)})` : 'none' }"></div>
     <div class="cell-glow"></div>
     <div class="cell-info">
       <span class="cell-title" :style="{ fontFamily: tipografia }">{{ titol }}</span>
-      <span class="cell-rol" :class="rol">{{ translatedRol }}</span>
-      <span class="cell-type" :class="projectType">{{ projectType }}</span>
+      <span class="cell-rol">{{ translatedRol }}</span>
+      <span class="cell-type">{{ projectType }}</span>
     </div>
   </div>
 </template>
@@ -44,7 +44,6 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
   width: var(--cell-size, 170px);
   height: var(--cell-size, 170px);
   background-color: rgba(255, 255, 255, 0.04);
-  border: 2px solid;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -62,7 +61,6 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
 .cell:hover {
   z-index: 10;
   transform: scale(1.08);
-  border-color: rgba(255, 255, 255, 0.15);
   box-shadow:
     0 0 40px color-mix(in srgb, var(--accent) 25%, transparent),
     0 15px 50px rgba(0, 0, 0, 0.4);
@@ -186,9 +184,9 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 600;
-  color: var(--accent);
-  background: rgb(100, 100, 100);
-  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  color: var(--cat-director-art-chars);
+  background: var(--cat-director-art-bg);
+  border: 1px solid var(--cat-director-art-border);
   border-radius: 99px;
   padding: 0.15rem 0.5rem;
   position: relative;
@@ -201,15 +199,13 @@ const catColor = computed(() => catColorMap[props.projectType] || 'transparent')
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 600;
-  color: var(--accent);
-  background-color: rgb(145, 145, 145);
-  border: 1px solid rgb(99, 99, 99);
-  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  color: var(--main-primary-light-chars);
+  background-color: var(--main-primary-light);
+  border: 1px solid var(--main-primary-light-border);
   border-radius: 99px;
   padding: 0.15rem 0.5rem;
   position: relative;
   white-space: nowrap;
-  border: 1px solid;
 }
 
 .VIDEOCLIP {
